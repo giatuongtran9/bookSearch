@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+
+  .btn {
+    display: block;
+    width: 50%;
+    height: 5rem;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 1.5rem;
+  }
+}
