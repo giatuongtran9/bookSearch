@@ -2,16 +2,12 @@
   "name": "book-search",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "16.13.1",
-    "npm": "7.24.2"
-  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "heroku-postbuild": "cd client && npm install && num run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Gia Tuong Tran",
   "license": "ISC",
