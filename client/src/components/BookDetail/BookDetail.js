@@ -15,12 +15,6 @@ const BookDetail = (props) => {
     let state = useLocation()
     let navigate = useNavigate()
 
-    const [data, setData] = useState({
-        author: [],
-        cover: {},
-        title: '',
-        publish: ''
-    })
 
     const [container, setContainer] = useState([])
 
@@ -38,13 +32,6 @@ const BookDetail = (props) => {
         })
         .then(res => res.json())
         .then(result => {
-            setData({...data, 
-                author: Object.values(result.records)[0].data.authors ? Object.values(result.records)[0].data.authors[0].name : 'No Author',
-                cover: Object.values(result.records)[0].data.cover,
-                title: Object.values(result.records)[0].data.title,
-                publish: Object.values(result.records)[0].data.publish_date
-            })
-
             setContainer(arr => [...arr, {
                 author: Object.values(result.records)[0].data.authors ? Object.values(result.records)[0].data.authors[0].name : 'No Author',
                 cover: Object.values(result.records)[0].data.cover,
@@ -57,10 +44,6 @@ const BookDetail = (props) => {
     useEffect(() => {
 
         if (isbns) {
-            // isbns.map(isbn => {
-            //     fetchData(isbn)
-            // })
-
             Promise.all(isbns.map(isbn => {
                 fetchData(isbn)
             }))
