@@ -42,7 +42,7 @@
     display: block;
     padding-left: 3rem;
     font-family: "Raleway", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ad7d52;
     text-align: left;
     text-transform: uppercase;
@@ -85,20 +85,20 @@
 @media only screen and (max-width: 767px) {
   .info {
     .card-title {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     .card-author {
       padding-bottom: 0;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     .card-contributor {
-      font-size: 1.8rem;
+      font-size: 1rem;
     }
 
     .card-date {
-      font-size: 2rem;
+      font-size: 1rem;
     }
   }
 }
@@ -107,20 +107,20 @@
   .info {
     .card-title {
       padding-bottom: 0;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
 
     .card-author {
       padding-bottom: 0;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
 
     .card-contributor {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     .card-date {
-      font-size: 2.2rem;
+      font-size: 1.2rem;
     }
   }
 }
