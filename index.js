@@ -8,16 +8,16 @@ app.use(express.urlencoded({extended: true}))
 
 app.use(express.static(path.join(__dirname, '/book-search/build')))
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '/book-search/build')));
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname = '../book-search/build/index.html'));
-    })
-}
+// if (process.env.NODE_ENV === 'production') {
+//     app.use(express.static(path.join(__dirname, '/book-search/build')));
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.join(__dirname = '/book-search/build/index.html'));
+//     })
+// }
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/book-search/public/index.html'));
-})
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname + '/book-search/public/index.html'));
+// })
 
 app.get('/', (req, res) => {
     res.send('Hello')
